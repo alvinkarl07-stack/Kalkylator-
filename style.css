@@ -1,0 +1,42 @@
+*{
+    padding: 0 ;
+    margin: 0;
+}
+body{
+display: flex;
+flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color:aquamarine;
+}
+div{
+    --display: flex;
+    --align-items: center;
+    --justify-content: center;
+}
+.sidemenu{
+    width: 15%;
+    height: auto;
+    background-color: aquamarine;
+    padding: 15px;
+    outline: 10px  rgb(102, 14, 51) ;
+}
+.kalkylator{
+position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 50%;
+  height: 50%;
+  background-color: bisque;
+}
