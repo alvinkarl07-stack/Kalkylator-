@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.0/math.js",
-             type="module" src="script.js">
-    </script>
-
+    <script src="math.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -16,30 +14,39 @@
         <h1>Kalkylator</h1>
     </header>
     <main>
+        <div class="sidemenu">  
+        <details>
+            <summary>Meny</summary>
+            <nav>
+            <a href="index.html"><button id="Simpel_kalk">Simpel kalkylator</button></a>
+            <a href="Advanceradkalk.html"><button id="Advancerad_kalk">Advancerad kalkylator</button></a>
+            </nav>
+        </details>
+        </div>
         <div class="kalkylator">
             <output id="summaruta"></output>
 
             <div class="buttons">
-                <button  id="operator"> C </button>
-                <button id="operator"> &lt; </button>
-                <button id="operator">  ^ </button>
-                <button id="operator"> ÷ </button>
+                <button  class="operator"> C </button>
+                <button class="operator"> &lt; </button>
+                <button class="operator">  ^ </button>
+                <button class="operator"> ÷ </button>
                 <button > 1 </button>
                 <button > 2 </button>
                 <button > 3 </button>
-                <button id="operator" > x </button>
+                <button class="operator" > x </button>
                 <button > 4 </button>
                 <button > 5 </button>
                 <button > 6 </button>
-                <button id="operator"> + </button>
+                <button class="operator"> + </button>
                 <button > 7 </button>
                 <button > 8 </button>
                 <button > 9 </button>
-                <button id="operator" > - </button>
+                <button class="operator" > - </button>
                 <button > 0 </button>
                 <button > . </button>
                 <button> (-) </button>
-                <button id="operator"> = </button>
+                <button class="operator"> = </button>
             
     
             </div>

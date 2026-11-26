@@ -1,36 +1,33 @@
-const math = require('mathjs');
-
-const expression = '2 + 3 * sqrt(4) / 2';
-const result = math.evaluate(expression);
-
-console.log(`The result of the expression "${expression}" is ${result}`);
+const resultat = math.evaluate("2 + 3 * 4"); 
+console.log()
 
 
-function sum(){
-
-}
-function handleAction(){
-    let buttons=document.getElementsByClassName("buttons");
-    document.getElementById("summaruta") === buttons
-    
-
-
-}
 function init(){
-    let buttons=document.getElementsByClassName("buttons");
+    let buttons=Array.from(document.getElementsByClassName("buttons"));
     buttons.addEventListener('click' , handleAction);
+    let summaruta=document.getElementById("summaruta");
 
-    document.getElementsByClassName('keydown' , function(event){
-          if (event.code === '1,2,3,4,5,6,,7,8,9,0'){ 
+    document.addEventListener('keydown' , function(event){
+          if (event.key === '1,2,3,4,5,6,,7,8,9,0,'){ 
             handleAction()
           }
-          if (event.code === Enter){
+          if (event.key === 'Enter'){
             sum();
-         }
+          }
+          
 }); }
-function calc(){
-
+function handleAction(){
+    
+}
+function reset(){
+    document.addEventListener('keydown' , function(event){
+        if (event.key === 'r') {
+            window.location.reload(); 
 }
 
+} )};
+function kalk(){
+    buttons
+}
 
 window.onload = init;
